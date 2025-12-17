@@ -1,11 +1,10 @@
-
 import personaje
 class Personaje:
     def __init__(self, nombre, nivel, clase ):
         self.nombre = nombre
         self._nivel = nivel
         super().__init__(clase)
-
+        
     @property
     def nivel(self):
         return self._nivel
