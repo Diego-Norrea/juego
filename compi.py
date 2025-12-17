@@ -1,5 +1,5 @@
 import personaje
-class Compañero(personaje):
+class Compi(personaje):
     def __init__(self, compi, nivel, clase ):
         super().__init__(clase, nivel)
         self.compi = compi
