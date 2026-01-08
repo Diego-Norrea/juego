@@ -3,11 +3,11 @@ from habilidades import Habilidades
 
 class Enemigo(Habilidades, ABC):
     def __init__(self, nombre="Enemigo", hp=80, daño=12):
-        self.nombre = nombre           # público: para mostrar en menú
-        self._nivel = 1                # protegido: nivel para subir dificultad
-        self.__hp = hp                 # privado
-        self.__daño = daño             # privado
-        self._cooldown = 2             # protegido para habilidades especiales
+        self.nombre = nombre           
+        self._nivel = 1                
+        self.__hp = hp                 
+        self.__daño = daño             
+        self._cooldown = 2             
 
     def atacar(self, objetivo):
         if self._cooldown >= 2:

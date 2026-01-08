@@ -18,7 +18,7 @@ class Mago(Personaje):
         else:
             self._cooldown += 1
             objetivo.recibir_daño(self._Personaje__daño)
-        print(f"{self.nombre} ataca con espada y hace {self._Personaje__daño} de daño")
+        print(f"{self.nombre} usa ataque magico y hace {self._Personaje__daño} de daño")
 
     def usar_habilidad(self, objetivo):
         daño = self._Personaje__daño + 8
